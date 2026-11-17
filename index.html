@@ -5,418 +5,284 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Transport Bacău – Germania | Persoane, colete, mașini pe platformă</title>
 <meta name="description" content="Curse săptămânale Bacău – Germania: plecare vineri din Bacău prin Onești, Brașov, Sibiu, Arad, retur duminică. Transport persoane, colete și mașini pe autoplatformă. Rezervări 0746 551 785.">
-<meta name="theme-color" content="#0E1B3D">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E1B3D'/%3E%3Cpath d='M10 23V9h7a4.5 4.5 0 0 1 0 9h-4' stroke='%23FFC61A' stroke-width='3.4' fill='none'/%3E%3C/svg%3E">
-<link rel="preload" href="/fonts/Barlow-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/fonts/fonts.css">
-<link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
-<link rel="stylesheet" href="/assets/css/site.css">
+<meta name="theme-color" content="#071a4a">
+<meta property="og:title" content="Transport Bacău – Germania">
+<meta property="og:description" content="Plecare vineri din Bacău, retur duminică din Germania. Persoane, colete, mașini pe platformă.">
+<meta property="og:image" content="img/sprinter-32-platforma.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23071a4a'/%3E%3Cpath d='M9 22V10h7.5a4 4 0 0 1 0 8H13' stroke='%23ffc21a' stroke-width='3.2' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="preload" as="image" href="img/sprinter-32-platforma.webp">
+<link href="assets/site.css" rel="stylesheet">
 <style>
-/* culorile firmei: bleumarin + galben (din afișe) */
-:root{--or:#FFC61A;--or-d:#E6A900;--ink:#0E1B3D;--grey:#F2F4F8;--navy2:#16295A}
-.hd-logo{display:flex;align-items:center;gap:.625rem;text-decoration:none}
-.hd-mark{width:2.5rem;height:2.5rem;border-radius:.625rem;background:var(--ink);display:grid;place-items:center;flex:none}
-.hd-name{display:block;font-weight:800;font-size:1.1875rem;line-height:1;color:var(--ink);letter-spacing:-.01em}
-.hd-name b{color:#1E4FBF;font-weight:800}
-.hd-sub{display:block;font-size:.75rem;font-weight:600;color:var(--mut);margin-top:.25rem;letter-spacing:.02em}
-.hd-nav a:hover{color:#1E4FBF}
-/* text închis pe fond galben */
-.hd-tel,.book-go,.book-tabs input:checked+span,.end,.dock-call,.group-ic,.big-call,.car-new,.safe-badge,.btn-or,.daily-call{color:var(--ink)!important}
-.perks .perk-max,.perks .perk-max b,.perks .perk-max i{color:var(--ink)!important}
-.end h2{color:var(--ink)}.end p{color:rgba(14,27,61,.75)}
-.fld:focus-within{background:#FFFBEA}
-.steps li::before{color:var(--ink)}
-.hero{background:var(--ink)}
-.hero-bg{background:
-  radial-gradient(55% 70% at 78% 50%,rgba(255,198,26,.28) 0%,rgba(255,198,26,0) 70%),
-  radial-gradient(70% 90% at 20% 0%,#1B3577 0%,rgba(27,53,119,0) 70%),
-  linear-gradient(180deg,#0E1B3D 0%,#0B1530 100%)!important}
-.hero h1 em{color:var(--or)}
-.hero-van img{filter:drop-shadow(0 2.25rem 2rem rgba(0,0,0,.55))}
-.price-tag{background:var(--or)!important;color:var(--ink)!important}
-.price-tag b,.price-tag span{color:var(--ink)!important}
-/* bilet în hero */
-.ticket{background:#fff;color:var(--ink);border-radius:1.125rem;padding:1.5rem 1.625rem;box-shadow:0 2rem 3.5rem -1.5rem rgba(0,0,0,.6);max-width:30rem;margin-left:auto;position:relative}
-.ticket::before{content:"";position:absolute;left:1.625rem;right:1.625rem;top:0;height:.3125rem;background:var(--or);border-radius:0 0 .3rem .3rem}
-.tk-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:1rem;border-bottom:1px dashed var(--line)}
-.tk-top span{font-weight:600;color:var(--mut);font-size:.9375rem}.tk-top span i{color:#1E4FBF}
-.tk-top b{font-size:1.5rem;font-weight:800}
-.tk-route{list-style:none;margin:1.125rem 0;padding:0 0 0 1.75rem;position:relative;display:grid;gap:.625rem}
-.tk-route::before{content:"";position:absolute;left:.4375rem;top:.5rem;bottom:.5rem;width:2px;background:repeating-linear-gradient(180deg,#C9D1E3 0 6px,transparent 6px 10px)}
-.tk-route li{position:relative;display:flex;align-items:baseline;gap:.625rem}
-.tk-route li::before{content:"";position:absolute;left:-1.625rem;top:.3125rem;width:.75rem;height:.75rem;border-radius:50%;background:#fff;border:2px solid #9AA6C2}
-.tk-route li.on::before{background:var(--or);border-color:var(--or);width:1rem;height:1rem;left:-1.75rem;top:.1875rem}
-.tk-route b{font-weight:700;font-size:1.0625rem}.tk-route li.on b{font-size:1.25rem;font-weight:800}
-.tk-route span{color:var(--mut);font-size:.875rem}
-.tk-ret{background:var(--grey);border-radius:.625rem;padding:.75rem 1rem;font-size:.9375rem;color:var(--txt)}.tk-ret i{color:#1E4FBF;margin-right:.25rem}.tk-ret b{color:var(--ink)}
-.tk-btns{display:grid;grid-template-columns:1fr 1fr;gap:.625rem;margin-top:1rem}
-.tk-btns a{display:flex;align-items:center;justify-content:center;gap:.5rem;height:3rem;border-radius:.625rem;font-weight:700;text-decoration:none}
-.tk-call{background:var(--or);color:var(--ink)}.tk-wa{background:var(--wa);color:#fff}
-/* flotă fără poze */
-.car-top{grid-template-columns:auto 1fr!important;gap:2rem;padding:1.75rem}
-.car-ic{width:12rem;aspect-ratio:1;border-radius:1rem;background:linear-gradient(160deg,#16295A,#0E1B3D);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
-.car-ic>.bi{font-size:4.5rem;color:var(--or)}
-.car-i{width:3rem;height:3rem;border-radius:.75rem;background:#FFF6D6;color:var(--ink);display:grid;place-items:center;font-size:1.5rem;margin-bottom:.875rem}
-.car-i .bi{color:var(--ink)!important;margin:0!important}
-.cars{grid-template-columns:repeat(3,1fr)!important}
-.car{background:#fff;border:1px solid var(--line);border-radius:var(--r)}
-.car-body{padding:1.5rem}
-.trust-panel{background:linear-gradient(160deg,#16295A,#0E1B3D);color:#fff;border-radius:var(--r);padding:2rem}
-.tp-h{font-weight:800;font-size:1.375rem;margin:0 0 1.25rem}
-.tp-row{display:flex;gap:1rem;align-items:center;padding:1rem 0;border-top:1px solid rgba(255,255,255,.12)}
-.tp-d{flex:none;min-width:6.5rem;text-align:center;background:var(--or);color:var(--ink);font-weight:800;border-radius:.5rem;padding:.5rem .75rem}
-.tp-row b{display:block;font-size:1.125rem}.tp-row span{color:rgba(255,255,255,.7);font-size:.9375rem}
-.tp-note{margin:1rem 0 0;color:rgba(255,255,255,.8);font-size:.9375rem}.tp-note i{color:var(--or);margin-right:.375rem}
-@media (max-width:980px){.ticket{margin:1rem auto 0}.cars{grid-template-columns:1fr!important}.car-top{grid-template-columns:1fr!important}.car-ic{width:100%;aspect-ratio:auto;padding:1.5rem}}
-/* carduri servicii cu iconiță în loc de poză */
-.svc-top{aspect-ratio:3/2;display:grid;place-items:center;background:linear-gradient(160deg,#16295A,#0E1B3D);position:relative;overflow:hidden}
-.svc-top img{width:88%;aspect-ratio:auto!important;object-fit:contain!important;filter:drop-shadow(0 1rem 1rem rgba(0,0,0,.45))}
-.svc-top .bi{font-size:4.5rem;color:var(--or)}
-.svc-top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:.375rem;background:var(--or)}
-/* traseu */
-.stops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:.75rem;counter-reset:st}
-.stops li{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1rem 1.125rem;position:relative}
-.stops li b{display:block;color:var(--ink);font-size:1.125rem;font-weight:700}
-.stops li span{display:block;color:var(--mut);font-size:.875rem;margin-top:.125rem}
-.stops li i{color:#1E4FBF;font-size:1.25rem;display:block;margin-bottom:.375rem}
-.stops li.end-stop{background:var(--ink);border-color:var(--ink)}
-.stops li.end-stop b{color:#fff}.stops li.end-stop span{color:rgba(255,255,255,.7)}.stops li.end-stop i{color:var(--or)}
-.legs{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.25rem}
-.leg{display:flex;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.125rem 1.25rem}
-.leg-day{flex:none;width:3.5rem;height:3.5rem;border-radius:.75rem;background:var(--or);color:var(--ink);display:grid;place-items:center;font-size:1rem;font-weight:800;letter-spacing:.04em}
-.leg b{display:block;color:var(--ink);font-size:1.125rem}
-.leg span{display:block;color:var(--mut);font-size:.9375rem}
-/* flotă */
-.car-img{background:linear-gradient(180deg,#EEF1F7,#fff)}
-.car-top .car-img img{aspect-ratio:auto}
-.plate{display:inline-flex;margin-top:.75rem;border:1.5px solid #1b1b1b;border-radius:.3rem;overflow:hidden;font-weight:700;font-size:.875rem;letter-spacing:.04em;color:#111;background:#fff}
-.plate i{background:#1F47B8;width:.875rem;margin:0!important}
-.plate span{padding:.25rem .625rem}
-.trust-photo{background:linear-gradient(160deg,#16295A,#0E1B3D);border-radius:var(--r);display:grid;place-items:center;aspect-ratio:4/3;padding:1.5rem;position:relative;overflow:hidden}
-.trust-photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:var(--or)}
-.trust-photo img{position:relative;z-index:1;aspect-ratio:auto!important;object-fit:contain!important;width:92%!important;filter:drop-shadow(0 1.25rem 1.25rem rgba(0,0,0,.45));border-radius:0!important}
-@media (max-width:980px){.stops{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:640px){.tk-top{flex-direction:column;gap:.25rem}.ticket{padding:1.25rem}.stops{grid-template-columns:1fr 1fr}.legs{grid-template-columns:1fr}.hd-sub{display:none}.hd-name{font-size:1.0625rem}}
+.logo-mark{width:2.6rem;height:2.6rem;border-radius:.75rem;background:var(--navy);display:grid;place-items:center;flex:none}
+.logo-mark i{color:var(--yellow);font-size:1.3rem}
+.logo-inv .logo-mark{background:var(--yellow)}.logo-inv .logo-mark i{color:var(--navy)}
+@media (max-width:640px){.logo-mark{width:2.3rem;height:2.3rem}}
+/* poza noastră e 4:3 */
+.hero-van{aspect-ratio:4/3!important}
+.hero-van img{object-position:40% 55%}
+.sched{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.25rem}
+.sched span{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem 1rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#fff;font-weight:500;font-size:.95rem}
+.sched span i{color:var(--yellow)}
+.sched b{color:var(--yellow);font-weight:600}
+.rt-stops{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-top:1rem}
+.rt-stops span{padding:.35rem .8rem;border-radius:999px;background:var(--surface);font-weight:500;font-size:.92rem;color:var(--navy)}
+.rt-stops i{color:var(--blue);font-size:.85rem}
+.car .plate{display:inline-flex;margin-top:.6rem;border:1.5px solid #1b1b1b;border-radius:.3rem;overflow:hidden;font-weight:600;font-size:.85rem;letter-spacing:.04em;color:#111;background:#fff}
+.car .plate i{background:#1F47B8;width:.8rem}
+.car .plate span{padding:.2rem .55rem}
 </style>
 </head>
 <body>
-
-<header class="hd">
-  <div class="wrap hd-in">
-    <a href="/" class="hd-logo" aria-label="Transport Bacău – Germania, pagina principală">
-      <span class="hd-mark"><i class="bi bi-bus-front-fill" style="color:#FFC61A;font-size:1.25rem"></i></span>
-      <span><span class="hd-name">Bacău <b>–</b> Germania</span><span class="hd-sub">Transport persoane și colete</span></span>
+<header class="hd" id="top">
+  <div class="hd-in">
+    <a href="/" class="logo" aria-label="Transport Bacău – Germania, pagina principală">
+      <span class="logo-mark"><i class="bi bi-bus-front-fill"></i></span>
+      <span><b>Transport</b> Bacău – Germania</span>
     </a>
     <nav class="hd-nav" aria-label="Meniu">
       <a href="#servicii">Servicii</a>
-      <a href="#traseu">Traseu</a>
-      <a href="#masini">Mașini</a>
-      <a href="#incredere">De ce noi</a>
+      <a href="#rute">Traseu</a>
+      <a href="#flota">Mașini</a>
       <a href="#intrebari">Întrebări</a>
     </nav>
-    <a class="hd-wa" href="https://wa.me/40746551785" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    <a class="hd-wa" href="https://wa.me/40746551785?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20rezervare." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
     <a class="hd-tel" href="tel:+40746551785"><i class="bi bi-telephone-fill"></i><span>0746 551 785</span></a>
   </div>
 </header>
 
 <main>
-
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="wrap hero-in">
+    <div class="hero-in">
       <div class="hero-text">
-        <h1>Transport Bacău – Germania <em>în fiecare săptămână</em></h1>
-        <p class="hero-sub">Plecare vineri din Bacău, retur duminică din Germania. Urci din Onești, Brașov, Sibiu sau Arad și te lăsăm la adresa ta.</p>
-        <ul class="perks" aria-label="Ce ai la bord">
-          <li class="perk-max"><i class="bi bi-calendar-check"></i><b>Plecare vineri</b></li>
-          <li><i class="bi bi-tv"></i><b>Televizor</b></li>
-          <li><i class="bi bi-snow2"></i><b>Aer condiționat</b></li>
-          <li><i class="bi bi-person-arms-up"></i><b>Loc pentru picioare</b></li>
-          <li><i class="bi bi-suitcase2"></i><b>Bagaj inclus</b></li>
-          <li class="perk-max"><i class="bi bi-arrow-repeat"></i><b>Retur duminică</b></li>
-        </ul>
+        <h1>Curse săptămânale Bacău – Germania</h1>
+        <p class="hero-sub">Transport persoane, colete și mașini pe autoplatformă. Urci din Bacău, Onești, Brașov, Sibiu sau Arad și te lăsăm la adresa ta din Germania.</p>
+        <div class="hero-cta">
+          <a class="btn btn-light" href="tel:+40746551785"><i class="bi bi-telephone-fill"></i> 0746 551 785</a>
+          <a class="btn btn-wa" href="https://wa.me/40746551785?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20rezervare." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          <a class="btn btn-line" href="tel:+40746691906"><i class="bi bi-telephone"></i> 0746 691 906</a>
+        </div>
+        <div class="sched">
+          <span><i class="bi bi-arrow-right-circle-fill"></i> Plecare din Bacău: <b>vineri</b></span>
+          <span><i class="bi bi-arrow-left-circle-fill"></i> Retur din Germania: <b>duminică</b></span>
+        </div>
       </div>
       <div class="hero-van">
-        <div class="ticket">
-          <div class="tk-top"><span><i class="bi bi-bus-front-fill"></i> Următoarea plecare</span><b id="tk-date">Vineri</b></div>
-          <ol class="tk-route">
-            <li class="on"><b>Bacău</b><span>plecare vineri</span></li>
-            <li><b>Onești</b></li>
-            <li><b>Brașov</b></li>
-            <li><b>Sibiu</b></li>
-            <li><b>Arad</b></li>
-            <li class="on"><b>Germania</b><span>la adresa ta</span></li>
-          </ol>
-          <div class="tk-ret"><i class="bi bi-arrow-repeat"></i> Retur din Germania <b id="tk-ret">duminică</b></div>
-          <div class="tk-btns">
-            <a class="tk-call" href="tel:+40746551785"><i class="bi bi-telephone-fill"></i> 0746 551 785</a>
-            <a class="tk-wa" href="https://wa.me/40746551785" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-          </div>
-        </div>
+        <img src="img/sprinter-32-platforma.webp" alt="Mercedes Sprinter bleumarin BC 32 FMC cu autoplatformă și o mașină încărcată" width="1600" height="1200" fetchpriority="high">
       </div>
     </div>
   </section>
 
   <section class="quote" id="oferta">
-    <div class="wrap">
-      <h2 class="quote-h">Rezervă în 1 minut</h2>
-      <p class="quote-p">Alegi ce trimiți, scrii de unde și până unde, apeși butonul verde. Atât.</p>
-
+    <div class="quote-in">
+      <div class="quote-hd">
+        <h2>Rezervă în 1 minut</h2>
+        <p>Scrii de unde și până unde, apeși butonul. Îți confirmăm locul și prețul.</p>
+      </div>
       <form class="book" id="form" novalidate>
-        <p class="step"><span>1</span> Ce transportăm?</p>
-        <div class="book-tabs" role="radiogroup" aria-label="Ce transportăm">
-          <label><input type="radio" name="tip" value="Persoane" checked><span><i class="bi bi-people-fill"></i>Persoane</span></label>
-          <label><input type="radio" name="tip" value="Colet"><span><i class="bi bi-box-seam-fill"></i>Colet</span></label>
-          <label><input type="radio" name="tip" value="Mașină pe platformă"><span><i class="bi bi-car-front-fill"></i>Mașină</span></label>
+        <div class="tabs" role="radiogroup" aria-label="Ce transportăm">
+          <label><input type="radio" name="tip" value="Transport persoane" checked><span>Persoane</span></label>
+          <label><input type="radio" name="tip" value="Colet"><span>Colet</span></label>
+          <label><input type="radio" name="tip" value="Mașină pe platformă"><span>Mașină pe platformă</span></label>
         </div>
-
-        <p class="step"><span>2</span> De unde și până unde?</p>
-        <div class="book-row">
-          <div class="fld fld-from">
+        <div class="row">
+          <div class="fld">
             <label for="f-de">De unde</label>
             <input id="f-de" name="de" placeholder="ex. Bacău" autocomplete="address-level2">
           </div>
           <button type="button" class="swap" id="swap" aria-label="Inversează traseul"><i class="bi bi-arrow-left-right"></i></button>
-          <div class="fld fld-to">
+          <div class="fld">
             <label for="f-la">Până unde</label>
             <input id="f-la" name="la" placeholder="ex. Nürnberg">
           </div>
-          <div class="fld fld-date">
+          <div class="fld fld-s">
             <label for="f-data">Când</label>
             <input id="f-data" name="data" type="date">
           </div>
-          <div class="fld fld-nr" data-for="Persoane">
-            <label for="f-nr">Câte persoane</label>
-            <select id="f-nr" name="nr"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select>
+          <div class="fld fld-s">
+            <label for="f-nr">Persoane</label>
+            <select id="f-nr" name="nr"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>Peste 8</option></select>
           </div>
+          <button type="submit" class="go"><i class="bi bi-whatsapp"></i> Trimite</button>
         </div>
-
-        <p class="step"><span>3</span> Apasă aici:</p>
-        <button type="submit" class="book-go"><i class="bi bi-whatsapp"></i> Trimite pe WhatsApp</button>
-        <p class="book-err" id="err" hidden>Scrie de unde pleci și unde mergi.</p>
-        <p class="book-note"><i class="bi bi-info-circle"></i> Se deschide WhatsApp cu mesajul gata scris. Noi îți confirmăm locul și prețul.</p>
+        <p class="err" id="err" hidden>Scrie de unde pleci și unde mergi.</p>
+        <p class="note">Se deschide WhatsApp cu mesajul gata scris. Preferi să vorbești? Sună la <a href="tel:+40746551785">0746 551 785</a>.</p>
       </form>
-
-      <div class="routes">
-        <span>Sau apasă pe un exemplu:</span>
-        <button type="button" data-de="Bacău" data-la="Germania">Bacău → Germania</button>
-        <button type="button" data-de="Onești" data-la="Germania">Onești → Germania</button>
-        <button type="button" data-de="Brașov" data-la="Germania">Brașov → Germania</button>
-        <button type="button" data-de="Germania" data-la="Bacău">Germania → Bacău</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="facts">
-    <div class="wrap facts-in">
-      <div><i class="bi bi-calendar-week"></i><p><b>Curse săptămânale</b><span>vineri dus, duminică întors</span></p></div>
-      <div><i class="bi bi-geo-alt"></i><p><b>Urci pe traseu</b><span>Onești, Brașov, Sibiu, Arad</span></p></div>
-      <div><i class="bi bi-house-door"></i><p><b>La adresa ta</b><span>preluare de acasă, la cerere</span></p></div>
-      <div><i class="bi bi-suitcase2"></i><p><b>Bagaj inclus</b><span>plus remorcă pentru colete</span></p></div>
     </div>
   </section>
 
   <section class="sec" id="servicii">
-    <div class="wrap">
-      <div class="sec-hd">
-        <h2>Ce transportăm</h2>
-        <p>Oameni, pachete și mașini, în aceeași cursă săptămânală Bacău – Germania.</p>
+    <div class="sec-hd">
+      <h2>Ce transportăm</h2>
+      <p>Oameni, pachete și mașini, în aceeași cursă săptămânală, dus și întors.</p>
+    </div>
+    <div class="svc">
+      <article class="svc-card">
+        <i class="bi bi-people-fill"></i>
+        <h3>Transport persoane</h3>
+        <p>Locuri în microbuz din Bacău și din orașele de pe traseu, până la adresa ta din Germania. Bagajul e inclus.</p>
+        <a href="#oferta" data-tip="Transport persoane">Rezervă un loc <i class="bi bi-arrow-right"></i></a>
+      </article>
+      <article class="svc-card">
+        <i class="bi bi-box-seam-fill"></i>
+        <h3>Colete</h3>
+        <p>Pachete, haine, mâncare sau acte. Le luăm de la tine și le predăm în mâna celui care le așteaptă.</p>
+        <a href="#oferta" data-tip="Colet">Trimite un colet <i class="bi bi-arrow-right"></i></a>
+      </article>
+      <article class="svc-card">
+        <i class="bi bi-truck-flatbed"></i>
+        <h3>Mașini pe platformă</h3>
+        <p>Ți-ai cumpărat mașină din Germania? O încărcăm pe autoplatformă și ți-o aducem acasă.</p>
+        <a href="#oferta" data-tip="Mașină pe platformă">Cere ofertă <i class="bi bi-arrow-right"></i></a>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec sec-grey" id="rute">
+    <div class="sec-hd">
+      <h2>Traseul</h2>
+      <p>Nu trebuie să vii la Bacău. Te luăm din orașele de pe drum.</p>
+    </div>
+    <div class="rt-grid">
+      <div class="rt">
+        <i class="fl fl-ro"></i>
+        <div><b>Vineri: Bacău → Germania</b><span>Urcare în Onești, Brașov, Sibiu și Arad, apoi direct spre adresa ta din Germania.</span>
+          <div class="rt-stops"><span>Bacău</span><i class="bi bi-chevron-right"></i><span>Onești</span><i class="bi bi-chevron-right"></i><span>Brașov</span><i class="bi bi-chevron-right"></i><span>Sibiu</span><i class="bi bi-chevron-right"></i><span>Arad</span></div>
+        </div>
       </div>
-      <div class="svc">
-        <article class="svc-card">
-          <div class="svc-top"><i class="bi bi-people-fill"></i></div>
-          <div class="svc-body">
-            <h3>Persoane</h3>
-            <p>Loc în microbuz din Bacău sau din orașele de pe traseu, până la adresa ta din Germania. Televizor, aer condiționat și bagaj inclus.</p>
-            <a href="#oferta" data-tip="Persoane" class="svc-link">Rezervă un loc <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </article>
-        <article class="svc-card" id="colete" style="scroll-margin-top:90px">
-          <div class="svc-top"><i class="bi bi-box-seam-fill"></i></div>
-          <div class="svc-body">
-            <h3>Colete</h3>
-            <p>Pachete, haine, mâncare, acte. Le ridicăm de la tine și le predăm în mâna celui care le așteaptă, în ambele sensuri.</p>
-            <a href="#oferta" data-tip="Colet" class="svc-link">Trimite un colet <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </article>
-        <article class="svc-card" id="platforma" style="scroll-margin-top:90px">
-          <div class="svc-top"><i class="bi bi-truck-flatbed"></i></div>
-          <div class="svc-body">
-            <h3>Mașini pe platformă</h3>
-            <p>Ți-ai cumpărat mașină din Germania? O încărcăm pe autoplatformă și ți-o aducem acasă.</p>
-            <a href="#oferta" data-tip="Mașină pe platformă" class="svc-link">Cere ofertă <i class="bi bi-arrow-right"></i></a>
-          </div>
-        </article>
+      <div class="rt">
+        <i class="fl fl-de"></i>
+        <div><b>Duminică: Germania → Bacău</b><span>Retur pe același traseu. Te luăm de la adresă și te lăsăm acasă.</span>
+          <div class="rt-stops"><span>Germania</span><i class="bi bi-chevron-right"></i><span>Arad</span><i class="bi bi-chevron-right"></i><span>Sibiu</span><i class="bi bi-chevron-right"></i><span>Brașov</span><i class="bi bi-chevron-right"></i><span>Bacău</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="sec sec-grey" id="traseu">
-    <div class="wrap">
-      <div class="sec-hd">
-        <h2>Traseul</h2>
-        <p>Nu trebuie să vii la Bacău. Te luăm din orașele de pe drum.</p>
-      </div>
-      <ol class="stops">
-        <li><i class="bi bi-geo-alt-fill"></i><b>Bacău</b><span>plecare</span></li>
-        <li><i class="bi bi-geo-alt"></i><b>Onești</b><span>urcare pe traseu</span></li>
-        <li><i class="bi bi-geo-alt"></i><b>Brașov</b><span>urcare pe traseu</span></li>
-        <li><i class="bi bi-geo-alt"></i><b>Sibiu</b><span>urcare pe traseu</span></li>
-        <li><i class="bi bi-geo-alt"></i><b>Arad</b><span>urcare pe traseu</span></li>
-        <li class="end-stop"><i class="bi bi-flag-fill"></i><b>Germania</b><span>la adresa ta</span></li>
-      </ol>
-      <div class="legs">
-        <div class="leg"><span class="leg-day">VIN</span><div><b>Vineri — spre Germania</b><span>Plecare din Bacău, cu urcare în Onești, Brașov, Sibiu și Arad.</span></div></div>
-        <div class="leg"><span class="leg-day">DUM</span><div><b>Duminică — spre casă</b><span>Retur din Germania pe același traseu, până la Bacău.</span></div></div>
-      </div>
+  <section class="sec" id="flota">
+    <div class="sec-hd">
+      <h2>Cu ce mergem</h2>
+      <p>Microbuze Mercedes Sprinter, cu remorcă pentru bagaje și autoplatformă pentru mașini.</p>
+    </div>
+    <div class="cars">
+      <article class="car">
+        <div class="car-img"><img src="img/sprinter-32-platforma.webp" alt="Mercedes Sprinter BC 32 FMC cu autoplatformă" loading="lazy" width="1600" height="1200"></div>
+        <h3>Mercedes Sprinter + autoplatformă</h3>
+        <p>Microbuzul nou, cu televizor și scaune comode. Aduce și mașini pe platformă.</p>
+        <span class="plate"><i></i><span>BC 32 FMC</span></span>
+      </article>
+      <article class="car">
+        <div class="car-img"><img src="img/sprinter-remorca.webp" alt="Mercedes Sprinter bleumarin cu remorcă acoperită pentru bagaje" loading="lazy" width="945" height="704"></div>
+        <h3>Mercedes Sprinter + remorcă</h3>
+        <p>Pentru persoane și colete, cu remorcă dublă axă pentru bagaje.</p>
+      </article>
     </div>
   </section>
 
-  <section class="sec" id="masini">
-    <div class="wrap">
-      <div class="sec-hd">
-        <h2>Cu ce mergem</h2>
-        <p>Mașinile noastre, toate înmatriculate în Bacău. Nu închiriate și nu de la terți.</p>
+  <section class="band" id="siguranta">
+    <div class="band-in">
+      <div class="band-hd">
+        <h2>Confort pe tot drumul</h2>
+        <p>Drumul e lung, așa că am pus în microbuze ce contează.</p>
       </div>
-      <div class="cars">
-        <article class="car car-top"><div class="car-ic"><i class="bi bi-bus-front-fill"></i><span class="plate"><i></i><span>BC 32 FMC</span></span></div>
-                    <div class="car-body">
-            <p class="car-new">Cel nou din flotă</p>
-            <h3>Mercedes Sprinter + remorcă</h3>
-            <ul>
-              <li><i class="bi bi-tv"></i> Televizor la bord</li>
-              <li><i class="bi bi-snow2"></i> Aer condiționat</li>
-              <li><i class="bi bi-person-fill"></i> Scaune comode, loc pentru picioare</li>
-              <li><i class="bi bi-box-seam-fill"></i> Remorcă dublă axă pentru bagaje și colete</li>
-            </ul>
-          </div>
-        </article>
-        <article class="car">
-                    <div class="car-body">
-            <h3>Mercedes Sprinter</h3>
-            <ul><li><i class="bi bi-people-fill"></i> Persoane și colete</li><li><i class="bi bi-snow2"></i> Aer condiționat</li></ul>
-            <span class="plate"><i></i><span>BC 15 FMC</span></span>
-          </div>
-        </article>
-        <article class="car">
-                    <div class="car-body">
-            <h3>Mercedes Sprinter</h3>
-            <ul><li><i class="bi bi-people-fill"></i> Grupuri și curse lungi</li><li><i class="bi bi-snow2"></i> Aer condiționat</li></ul>
-            <span class="plate"><i></i><span>BC 04 FMC</span></span>
-          </div>
-        </article>
-        <article class="car">
-                    <div class="car-body">
-            <h3>Opel Vivaro</h3>
-            <ul><li><i class="bi bi-people-fill"></i> Grupuri mici</li><li><i class="bi bi-signpost-2"></i> Curse la cerere</li></ul>
-            <span class="plate"><i></i><span>BC 85 FMC</span></span>
-          </div>
-        </article>
-      </div>
+      <ul class="band-list">
+        <li><i class="bi bi-tv-fill"></i><b>Televizor</b><span>În fiecare microbuz.</span></li>
+        <li><i class="bi bi-snow2"></i><b>Aer condiționat</b><span>Răcoare vara, cald iarna.</span></li>
+        <li><i class="bi bi-person-fill"></i><b>Scaune comode</b><span>Spațiu generos pentru picioare.</span></li>
+        <li><i class="bi bi-suitcase2-fill"></i><b>Bagaj inclus</b><span>Plus remorcă pentru colete.</span></li>
+      </ul>
     </div>
   </section>
 
-  <section class="sec sec-grey">
-    <div class="wrap">
-      <div class="sec-hd">
-        <h2>Cum rezervi</h2>
-        <p>Durează un minut. Fără conturi, fără aplicații.</p>
-      </div>
-      <ol class="steps">
-        <li><b>Ne suni sau ne scrii pe WhatsApp</b><span>Ne spui de unde urci, unde mergi în Germania și în ce săptămână.</span></li>
-        <li><b>Afli prețul pe loc</b><span>Îți confirmăm locul, prețul și ora la care trecem pe la tine.</span></li>
-        <li><b>Pleci vineri</b><span>Șoferul te sună înainte să ajungă. Te lăsăm la adresa ta.</span></li>
-      </ol>
+  <section class="sec" id="rezervare">
+    <div class="sec-hd">
+      <h2>Cum rezervi</h2>
+      <p>Durează două minute.</p>
     </div>
-  </section>
-
-  <section class="sec" id="incredere">
-    <div class="wrap trust">
-      <div class="trust-panel">
-        <p class="tp-h">Programul săptămânal</p>
-        <div class="tp-row"><span class="tp-d">Vineri</span><div><b>Bacău → Germania</b><span>Onești · Brașov · Sibiu · Arad</span></div></div>
-        <div class="tp-row"><span class="tp-d">Duminică</span><div><b>Germania → Bacău</b><span>pe același traseu</span></div></div>
-        <p class="tp-note"><i class="bi bi-calendar-heart"></i> De sărbători punem și curse în plus.</p>
-      </div>
-      <div class="trust-text">
-        <h2>De ce merg oamenii cu noi în Germania</h2>
-        <p class="lead">Facem drumul ăsta în fiecare săptămână. Știm traseul, știm opririle și știm cât de mult contează să ajungi la timp.</p>
-        <ul class="checks">
-          <li><i class="bi bi-check-circle-fill"></i><div><b>Curse fixe, în fiecare săptămână</b><span>Vineri plecăm, duminică ne întoarcem. Îți faci planul din timp.</span></div></li>
-          <li><i class="bi bi-check-circle-fill"></i><div><b>Vorbești direct cu noi</b><span>Mașinile sunt ale noastre, iar telefonul îl răspundem noi.</span></div></li>
-          <li><i class="bi bi-check-circle-fill"></i><div><b>Preț știut dinainte</b><span>Îl afli la telefon sau pe WhatsApp, înainte de plecare.</span></div></li>
-          <li><i class="bi bi-check-circle-fill"></i><div><b>Coletul ajunge la cine trebuie</b><span>Îl ridicăm de la tine și îl predăm în mână.</span></div></li>
-        </ul>
-        <a class="ig" href="https://www.facebook.com/share/1DhtX67MLf/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> Vezi plecările pe Facebook</a>
-      </div>
+    <div class="steps">
+      <div class="step"><i class="bi bi-telephone-fill"></i><b>Ne suni sau ne scrii</b><span>La 0746 551 785 sau 0746 691 906, ori pe WhatsApp din formular.</span></div>
+      <div class="step"><i class="bi bi-calendar-event-fill"></i><b>Stabilim locul și adresa</b><span>Îți spunem prețul și de unde te luăm vineri.</span></div>
+      <div class="step"><i class="bi bi-geo-alt-fill"></i><b>Pleci spre Germania</b><span>Te sunăm înainte să ajungem și pornim la drum.</span></div>
     </div>
   </section>
 
   <section class="sec sec-grey" id="intrebari">
-    <div class="wrap faq-wrap">
-      <div class="sec-hd">
-        <h2>Întrebări frecvente</h2>
-        <p>Nu găsești răspunsul? Sună-ne la <a href="tel:+40746551785">0746 551 785</a>.</p>
-      </div>
-      <div class="faq">
-        <details open><summary>Când plecați spre Germania?</summary><p>În fiecare vineri din Bacău. Returul din Germania e în fiecare duminică. De sărbători punem și curse în plus, pe care le anunțăm pe Facebook.</p></details>
-        <details><summary>Pot urca pe drum, nu din Bacău?</summary><p>Da. Luăm pasageri din Onești, Brașov, Sibiu și Arad. Dacă ești în altă localitate apropiată, sună-ne și vedem cum te preluăm.</p></details>
-        <details><summary>Mă luați de la adresă?</summary><p>Da, la cerere. Spune-ne adresa când rezervi.</p></details>
-        <details><summary>Cât bagaj pot lua?</summary><p>Bagajul e inclus în preț. Pentru bagaje mari sau în plus avem remorcă, doar spune-ne din timp.</p></details>
-        <details><summary>Cât costă?</summary><p>Prețul depinde de unde urci și de orașul din Germania. Îl afli exact la telefon sau pe WhatsApp, înainte de plecare.</p></details>
-        <details><summary>Aduceți și mașini din Germania?</summary><p>Da, pe autoplatformă. Ne spui de unde trebuie ridicată mașina și unde o vrei în România.</p></details>
-      </div>
+    <div class="sec-hd">
+      <h2>Întrebări frecvente</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>În ce zile plecați?</summary>
+        <p>Vineri din Bacău spre Germania și duminică din Germania înapoi. De sărbători punem și curse în plus, anunțate pe Facebook.</p>
+      </details>
+      <details>
+        <summary>Pot urca pe drum, nu din Bacău?</summary>
+        <p>Da, din Onești, Brașov, Sibiu și Arad. Dacă ești în altă localitate apropiată, sună-ne și vedem cum te preluăm.</p>
+      </details>
+      <details>
+        <summary>Mă luați de acasă?</summary>
+        <p>Da, la cerere. Spune-ne adresa când rezervi.</p>
+      </details>
+      <details>
+        <summary>Cât bagaj pot lua?</summary>
+        <p>Bagajul e inclus în preț. Pentru bagaje mari avem remorcă, doar spune-ne din timp.</p>
+      </details>
+      <details>
+        <summary>Aduceți mașini din Germania?</summary>
+        <p>Da, pe autoplatformă. Ne spui de unde se ridică mașina și unde o vrei în România și îți dăm prețul.</p>
+      </details>
     </div>
   </section>
 
-  <section class="end">
-    <div class="wrap end-in">
-      <div>
-        <h2>Pleci vinerea asta?</h2>
-        <p>Sună acum și îți spunem pe loc dacă mai avem locuri.</p>
-      </div>
-      <div class="end-btns">
-        <a class="btn btn-dark" href="tel:+40746551785"><i class="bi bi-telephone-fill"></i> 0746 551 785</a>
-        <a class="btn btn-wa" href="https://wa.me/40746551785?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20un%20loc%20spre%20Germania." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+  <section class="cta">
+    <div class="cta-in">
+      <h2>Pleci vinerea asta?</h2>
+      <p>Sună acum și îți spunem dacă mai avem locuri.</p>
+      <div class="cta-btns">
+        <a class="btn btn-light" href="tel:+40746551785"><i class="bi bi-telephone-fill"></i> 0746 551 785</a>
+        <a class="btn btn-light" href="tel:+40746691906"><i class="bi bi-telephone-fill"></i> 0746 691 906</a>
+        <a class="btn btn-wa" href="https://wa.me/40746551785?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20rezervare." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Scrie pe WhatsApp</a>
       </div>
     </div>
   </section>
-
 </main>
 
 <footer class="ft">
-  <div class="wrap ft-in">
+  <div class="ft-in">
     <div class="ft-brand">
-      <p class="ft-name">Transport Bacău – Germania</p>
+      <a href="#top" class="logo logo-inv"><span class="logo-mark"><i class="bi bi-bus-front-fill"></i></span><span><b>Transport</b> Bacău – Germania</span></a>
       <p>Transport persoane, colete și mașini pe platformă. Bacău – Onești – Brașov – Sibiu – Arad – Germania, în fiecare săptămână.</p>
     </div>
     <div class="ft-col">
-      <p class="ft-h">Contact</p>
-      <a href="tel:+40746551785"><i class="bi bi-telephone"></i> 0746 551 785</a>
-      <a href="tel:+40746691906"><i class="bi bi-telephone"></i> 0746 691 906</a>
-      <a href="https://wa.me/40746551785" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-      <a href="https://www.facebook.com/share/1DhtX67MLf/" target="_blank" rel="noopener"><i class="bi bi-facebook"></i> Facebook</a>
+      <b>Telefon</b>
+      <a href="tel:+40746551785">0746 551 785</a>
+      <a href="tel:+40746691906">0746 691 906</a>
+      <a href="https://wa.me/40746551785" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.facebook.com/share/1DhtX67MLf/" target="_blank" rel="noopener">Facebook</a>
     </div>
     <div class="ft-col">
-      <p class="ft-h">Program</p>
-      <span>Vineri — plecare din Bacău</span>
-      <span>Duminică — retur din Germania</span>
-    </div>
-    <div class="ft-col">
-      <p class="ft-h">Servicii</p>
+      <b>Servicii</b>
       <a href="#servicii">Transport persoane</a>
-      <a href="#colete">Colete</a>
-      <a href="#platforma">Mașini pe platformă</a>
+      <a href="#servicii">Colete</a>
+      <a href="#servicii">Mașini pe platformă</a>
     </div>
   </div>
-  <div class="wrap ft-copy">© <span id="y">2026</span> Transport Bacău – Germania</div>
+  <div class="ft-bot">
+    <span>© <span id="y">2026</span> Transport Bacău – Germania</span>
+    <a href="https://anpc.ro" target="_blank" rel="noopener">ANPC</a>
+  </div>
 </footer>
 
-<div class="dock" aria-label="Contact rapid">
-  <a class="dock-call" href="tel:+40746551785"><i class="bi bi-telephone-fill"></i> Sună</a>
-  <a class="dock-wa" href="https://wa.me/40746551785" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-</div>
+<a class="wa-float" href="https://wa.me/40746551785?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20rezervare." target="_blank" rel="noopener" aria-label="Scrie-ne pe WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
-<script src="/assets/js/site.js" defer></script>
+<nav class="mbar" aria-label="Contact rapid">
+  <a href="tel:+40746551785"><i class="bi bi-telephone-fill"></i> Sună</a>
+  <a href="https://wa.me/40746551785?text=Bun%C4%83%20ziua!%20A%C8%99%20dori%20o%20rezervare." class="mbar-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+</nav>
+
+<script src="assets/site.js" defer></script>
 </body>
 </html>
